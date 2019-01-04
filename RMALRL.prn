@@ -1,0 +1,47 @@
+﻿<xpml><page quantity='0' pitch='76.2 mm'></xpml>^XA
+^SZ2^JMA
+^MCY^PMN
+^PW802
+~JSN
+^JZY
+^LH0,0^LRN
+^XZ
+<xpml></page></xpml><xpml><page quantity='1' pitch='76.2 mm'></xpml>^XA
+^FO234,451
+^BY2^BCN,78,N,N^FD>:#Barcode#^FS
+^FT295,553
+^CI0
+^A0N,25,34^FD#Barcode#^FS
+^FO4,69
+^GB755,0,3^FS
+^FT233,47
+^A0N,25,34^FD#Title#^FS
+^FT42,114
+^A0N,23,31^FDItem :^FS
+^FT42,164
+^A0N,23,31^FDDesc :^FS
+^FT92,438
+^A0N,23,31^FDPack Size  :^FS
+^FT247,438
+^A0N,23,33^FD#PSize#^FS
+^FT420,438
+^A0N,23,31^FDQuantity  :^FS
+^FT564,438
+^A0N,23,51^FD#Qty#^FS
+^FT185,292
+^A0N,20,27^FD#GRNNo#^FS
+^FT42,293
+^A0N,23,31^FDGRN No :^FS
+^FT185,163
+^A0N,20,27^FD#Desc1#^FS
+^FT185,221
+^A0N,20,27^FD#Desc2#^FS
+^FT185,109
+^A0N,20,27^FD#Item#^FS
+^FT185,358
+^A0N,20,27^FD#VAR1#^FS
+^FT42,359
+^A0N,23,31^FDVAR1 :^FS
+^PQ1,0,1,Y
+^XZ
+<xpml></page></xpml><xpml><end/></xpml>

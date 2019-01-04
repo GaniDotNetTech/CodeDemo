@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOSMITH_WMS", "AOSMITH_WMS\AOSMITH_WMS.csproj", "{2B16A037-F546-45BF-8087-BFE21C9E8663}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AO SMITH WMS SETUP", "AO SMITH WMS SETUP\AO SMITH WMS SETUP.vdproj", "{E5C1A4F8-8D66-49DF-AA5D-B58B524EEADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B16A037-F546-45BF-8087-BFE21C9E8663}.Debug|x86.ActiveCfg = Debug|x86
+		{2B16A037-F546-45BF-8087-BFE21C9E8663}.Debug|x86.Build.0 = Debug|x86
+		{2B16A037-F546-45BF-8087-BFE21C9E8663}.Release|x86.ActiveCfg = Release|x86
+		{2B16A037-F546-45BF-8087-BFE21C9E8663}.Release|x86.Build.0 = Release|x86
+		{E5C1A4F8-8D66-49DF-AA5D-B58B524EEADC}.Debug|x86.ActiveCfg = Debug
+		{E5C1A4F8-8D66-49DF-AA5D-B58B524EEADC}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

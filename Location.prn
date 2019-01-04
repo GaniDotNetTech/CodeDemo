@@ -1,0 +1,25 @@
+﻿<xpml><page quantity='0' pitch='76.2 mm'></xpml>^XA
+^SZ2^JMA
+^MCY^PMN
+^PW822
+~JSN
+^JZY
+^LH0,0^LRN
+^XZ
+<xpml></page></xpml><xpml><page quantity='1' pitch='76.2 mm'></xpml>^XA
+^FT299,79
+^CI0
+^A0N,34,46^FDLOCATION^FS
+^FO37,97
+^GB711,0,3^FS
+^FO88,159
+^BY2^BCN,218,N,N^FD>:#Loc#^FS
+^FT123,407
+^A0N,34,46^FD#Loc#^FS
+^FT37,521
+^A0N,23,31^FDDesc:^FS
+^FT132,521
+^A0N,23,31^FD#Desc#^FS
+^PQ1,0,1,Y
+^XZ
+<xpml></page></xpml><xpml><end/></xpml>

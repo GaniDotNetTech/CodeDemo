@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2B16A037-F546-45BF-8087-BFE21C9E8663}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AOSMITH_WMS</RootNamespace>
+    <AssemblyName>AOSMITH_WMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AOSMITH_WMS.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AnnexGlas">
+      <HintPath>..\..\..\LotusLab\SUBJECT_TRACKING\SUBJECT_TRACKING\bin\Debug\AnnexGlas.exe</HintPath>
+    </Reference>
+    <Reference Include="BcilLib">
+      <HintPath>..\..\..\AnnexGlas\AnnexGlas\Resources\DLLS\BcilLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DataGridThemes">
+      <HintPath>..\packages\DataGridThemes.1.0.0\lib\net40\DataGridThemes.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=43.0.35.1084, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Vbe.Interop, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.4.0, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AOSMITH_WIPDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AOSMITH_WIPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\BL\BL_LOCATION.cs" />
+    <Compile Include="Main\BL\BL_LINE.cs" />
+    <Compile Include="Main\BL\BL_PICKLIST.cs" />
+    <Compile Include="Main\BL\BL_USERS.cs" />
+    <Compile Include="Main\BL\BL_ERP.cs" />
+    <Compile Include="Main\BL\BL_GRN.cs" />
+    <Compile Include="Main\BL\BL_JOMINPICKING.cs" />
+    <Compile Include="Main\BL\BL_WIP.cs" />
+    <Compile Include="Main\BL\BL_Login.cs" />
+    <Compile Include="Main\BL\BL_SerialPrint.cs" />
+    <Compile Include="Main\BL\BL_Reports.cs" />
+    <Compile Include="Main\BL\BL_AllStatusReprint.cs" />
+    <Compile Include="Main\DL\DL_AllStatusReprint.cs" />
+    <Compile Include="Main\DL\DL_Reports.cs" />
+    <Compile Include="Main\DL\DL_SerialPrint.cs" />
+    <Compile Include="Main\DL\DL_Login.cs" />
+    <Compile Include="Main\DL\DL_WIP.cs" />
+    <Compile Include="Main\DL\DL_JOMINPICKING.cs" />
+    <Compile Include="Main\DL\DL_GRN.cs" />
+    <Compile Include="Main\DL\DL_ERP.cs" />
+    <Compile Include="Main\DL\DL_PICKLIST.cs" />
+    <Compile Include="Main\DL\DL_USERS.cs" />
+    <Compile Include="Main\DL\DL_LINE.cs" />
+    <Compile Include="Main\DL\Datautility.cs" />
+    <Compile Include="Main\DL\DL_LOCATION.cs" />
+    <Compile Include="Main\PR\PR_AllStatusReprint.cs" />
+    <Compile Include="Main\PR\PR_Reports.cs" />
+    <Compile Include="Main\PR\PR_SerialPrint.cs" />
+    <Compile Include="Main\PR\PR_WIP_DETAIL.cs" />
+    <Compile Include="Main\PR\PR_WIP_MASTER.cs" />
+    <Compile Include="Main\PR\PR_JOMINPICKING.cs" />
+    <Compile Include="Main\PR\PR_GRN_DET.cs" />
+    <Compile Include="Main\PR\PR_ERP.cs" />
+    <Compile Include="Main\PR\PR_GRN.cs" />
+    <Compile Include="Main\PR\PR_PICKLIST.cs" />
+    <Compile Include="Main\PR\PR_USERS.cs" />
+    <Compile Include="Main\PR\PR_LINE.cs" />
+    <Compile Include="Main\PR\PR_LOCATION.cs" />
+    <Compile Include="Main\UI\Master\UCChangePassword.xaml.cs">
+      <DependentUpon>UCChangePassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Master\UCUsersRights.xaml.cs">
+      <DependentUpon>UCUsersRights.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Master\UCUsers.xaml.cs">
+      <DependentUpon>UCUsers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Master\UCLine.xaml.cs">
+      <DependentUpon>UCLine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_DISPATCH.cs">
+      <DependentUpon>DS_DISPATCH.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_MRSPICKSLIPREPORT.cs">
+      <DependentUpon>DS_MRSPICKSLIPREPORT.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCFGDashBordReports.xaml.cs">
+      <DependentUpon>UCFGDashBordReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_DISPATCH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DISPATCH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCRMInventoryReports.xaml.cs">
+      <DependentUpon>UCRMInventoryReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_FGINVENTORY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_FGINVENTORY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_RMINVENTORY.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RMINVENTORY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCFGINVENTORYReports.xaml.cs">
+      <DependentUpon>UCFGINVENTORYReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_FGMODETAILS.cs">
+      <DependentUpon>DS_FGMODETAILS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_FGMODETAILS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_FGMODETAILS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCFGMODetailsReports.xaml.cs">
+      <DependentUpon>UCFGMODetailsReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_FGINVMOVEMENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_FGINVMOVEMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCFGINVENTORYMOVEMENTReports.xaml.cs">
+      <DependentUpon>UCFGINVENTORYMOVEMENTReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_RMINVMOVEMENT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_RMINVMOVEMENT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCRMINVENTORYMOVEMENTReports.xaml.cs">
+      <DependentUpon>UCRMINVENTORYMOVEMENTReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_MRSPICKSLIPREPORT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_MRSPICKSLIPREPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCMRSPICKSLIPReports.xaml.cs">
+      <DependentUpon>UCMRSPICKSLIPReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_GRNREPORT.cs">
+      <DependentUpon>DS_GRNREPORT.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\UI\Report\DS_GRNREPORT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GRNREPORT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCGRNReports.xaml.cs">
+      <DependentUpon>UCGRNReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCReports.xaml.cs">
+      <DependentUpon>UCReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Transaction\UCAllStatusReprint.xaml.cs">
+      <DependentUpon>UCAllStatusReprint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Transaction\UCFGMOPrinting.xaml.cs">
+      <DependentUpon>UCFGMOPrinting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Transaction\UCJOMINPicking.xaml.cs">
+      <DependentUpon>UCJOMINPicking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Transaction\UCPickList.xaml.cs">
+      <DependentUpon>UCPickList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Transaction\UCPrinting.xaml.cs">
+      <DependentUpon>UCPrinting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\UI\Report\UCDISPATCHReports.xaml.cs">
+      <DependentUpon>UCDISPATCHReports.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StartWindow.xaml.cs">
+      <DependentUpon>StartWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CustomMessageBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DBSettings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HOME.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.xaml.cs">
+      <DependentUpon>CustomMessageBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBSettings.xaml.cs">
+      <DependentUpon>DBSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.xaml.cs">
+      <DependentUpon>HOME.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Main\UI\Master\UCChangePassword.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Master\UCUsersRights.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Master\UCUsers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Master\UCLine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Master\UCLocation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main\UI\Report\UCFGDashBordReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCRMInventoryReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCFGINVENTORYReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCFGMODetailsReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCFGINVENTORYMOVEMENTReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCRMINVENTORYMOVEMENTReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCMRSPICKSLIPReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCGRNReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Transaction\UCAllStatusReprint.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Transaction\UCFGMOPrinting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Transaction\UCJOMINPicking.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Transaction\UCPickList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main\UI\Transaction\UCPrinting.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Main\UI\Report\UCDISPATCHReports.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ModalWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Properties\DesignTimeResources.xaml" Condition="'$(DesignTime)'=='true' OR ('$(SolutionPath)'!='' AND Exists('$(SolutionPath)') AND '$(BuildingInsideVisualStudio)'!='true' AND '$(BuildingInsideExpressionBlend)'!='true')">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <ContainsDesignTimeResources>true</ContainsDesignTimeResources>
+    </Page>
+    <Page Include="StartWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\BureauBlack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\BureauBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExpressionDark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExpressionLight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ShinyBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ShinyRed.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\WhistlerBlue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\Common\EnumSTD.cs" />
+    <Compile Include="Main\Common\ExcelHelper.cs" />
+    <Compile Include="Main\Common\AOS_COMMON.cs" />
+    <Compile Include="Main\Common\NX_ENCRYPTION.cs" />
+    <Compile Include="Main\Common\NX_Extension.cs" />
+    <Compile Include="Main\Common\PrintBarcode.cs" />
+    <Compile Include="Main\Common\TextBoxMaskBehavior.cs" />
+    <Compile Include="Main\UI\Master\UCLocation.xaml.cs">
+      <DependentUpon>UCLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ModalWindow.xaml.cs">
+      <DependentUpon>ModalWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Main\UI\Report\RPTDISPATCH.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTFGINVENTORY.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTFGINVMOVEMENT.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTFGMODETAILS.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTGRN.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTMRSPICKING.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTPENDINGPUTAWAY.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTRMINVENTORY.rdlc" />
+    <EmbeddedResource Include="Main\UI\Report\RPTRMINVMOVEMENT.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="AOSMITH_WIPDataSet.xsc">
+      <DependentUpon>AOSMITH_WIPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AOSMITH_WIPDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AOSMITH_WIPDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AOSMITH_WIPDataSet.xss">
+      <DependentUpon>AOSMITH_WIPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Location.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MRPLabel.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MRPInstant.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Carton.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Main\UI\Report\DS_DISPATCH.xsc">
+      <DependentUpon>DS_DISPATCH.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_DISPATCH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DISPATCH.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_DISPATCH.xss">
+      <DependentUpon>DS_DISPATCH.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVENTORY.xsc">
+      <DependentUpon>DS_FGINVENTORY.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVENTORY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_FGINVENTORY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVENTORY.xss">
+      <DependentUpon>DS_FGINVENTORY.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVMOVEMENT.xsc">
+      <DependentUpon>DS_FGINVMOVEMENT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVMOVEMENT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_FGINVMOVEMENT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_FGINVMOVEMENT.xss">
+      <DependentUpon>DS_FGINVMOVEMENT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGMODETAILS.xsc">
+      <DependentUpon>DS_FGMODETAILS.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_FGMODETAILS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_FGMODETAILS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_FGMODETAILS.xss">
+      <DependentUpon>DS_FGMODETAILS.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_GRNREPORT.xsc">
+      <DependentUpon>DS_GRNREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_GRNREPORT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GRNREPORT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_GRNREPORT.xss">
+      <DependentUpon>DS_GRNREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_MRSPICKSLIPREPORT.xsc">
+      <DependentUpon>DS_MRSPICKSLIPREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_MRSPICKSLIPREPORT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_MRSPICKSLIPREPORT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_MRSPICKSLIPREPORT.xss">
+      <DependentUpon>DS_MRSPICKSLIPREPORT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVENTORY.xsc">
+      <DependentUpon>DS_RMINVENTORY.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVENTORY.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RMINVENTORY.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVENTORY.xss">
+      <DependentUpon>DS_RMINVENTORY.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVMOVEMENT.xsc">
+      <DependentUpon>DS_RMINVMOVEMENT.xsd</DependentUpon>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVMOVEMENT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_RMINVMOVEMENT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Main\UI\Report\DS_RMINVMOVEMENT.xss">
+      <DependentUpon>DS_RMINVMOVEMENT.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Pallet.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\DataSources\AOSMITH_WIPDataSet.datasource" />
+    <None Include="Properties\DataSources\AOSMITH_WMS.Main.UI.Report.DS_MRSPICKSLIPREPORT+DT_DETAILS_MRSPICKSLIPDataTable.datasource" />
+    <None Include="Properties\DataSources\AOSMITH_WMS.Main.UI.Report.DS_MRSPICKSLIPREPORT.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="RMALRL.prn">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="Icon.ico" />
+    <Content Include="RMALRL_old.prn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo.jpg" />
+    <Content Include="Resources\DLLS\BcilLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DLLS\Microsoft.Office.Interop.Excel.dll" />
+    <Resource Include="Resources\DLLS\Microsoft.Office.Interop.Excel.xml" />
+    <Content Include="Resources\DLLS\Microsoft.Vbe.Interop.dll" />
+    <Content Include="Resources\DLLS\office.dll" />
+    <Resource Include="Resources\DLLS\office.xml" />
+    <Content Include="Resources\DLLS\WpfAnimatedGif.dll" />
+    <Resource Include="Resources\Icon.ico" />
+    <Resource Include="Resources\Images\Actions-edit-clear-icon.png" />
+    <Resource Include="Resources\Images\Add1.png" />
+    <Resource Include="Resources\Images\Add2.gif" />
+    <Resource Include="Resources\Images\AnnexLogo.jpg" />
+    <Resource Include="Resources\Images\AnnexLogo.png" />
+    <Resource Include="Resources\Images\BCIL_Logo_300dpi.jpg" />
+    <Resource Include="Resources\Images\button_Delete.png" />
+    <Resource Include="Resources\Images\Cancel__Red.ico" />
+    <Resource Include="Resources\Images\Circle_Blue.ico" />
+    <Resource Include="Resources\Images\Circle_Green.ico" />
+    <Resource Include="Resources\Images\Circle_Grey.ico" />
+    <Resource Include="Resources\Images\Circle_Orange.ico" />
+    <Resource Include="Resources\Images\Circle_Red.ico" />
+    <Resource Include="Resources\Images\Circle_Yellow.ico" />
+    <Resource Include="Resources\Images\close.png" />
+    <Resource Include="Resources\Images\Close_Box_Red.ico" />
+    <Resource Include="Resources\Images\Database_3.png" />
+    <Resource Include="Resources\Images\Delete.png" />
+    <Resource Include="Resources\Images\DeleteRed.ico" />
+    <Resource Include="Resources\Images\document-save-as.png" />
+    <Resource Include="Resources\Images\file_add.png" />
+    <Resource Include="Resources\Images\Home.ico" />
+    <Resource Include="Resources\Images\imgLock3.jpg" />
+    <Resource Include="Resources\Images\Info_Box_Blue.ico" />
+    <Resource Include="Resources\Images\job.png" />
+    <Resource Include="Resources\Images\key2.ico" />
+    <Resource Include="Resources\Images\minimize-icon.png" />
+    <Resource Include="Resources\Images\minimize.png" />
+    <Resource Include="Resources\Images\partialfirstframe.gif" />
+    <Resource Include="Resources\Images\Power__Yellow.ico" />
+    <Resource Include="Resources\Images\preferences-desktop-cryptography.png" />
+    <Resource Include="Resources\Images\print.ico" />
+    <Resource Include="Resources\Images\Save.png" />
+    <Resource Include="Resources\Images\server.ico" />
+    <Resource Include="Resources\Images\Smart.ico" />
+    <Resource Include="Resources\Images\Smartrac.JPG" />
+    <Resource Include="Resources\Images\smartracLogo.JPG" />
+    <Resource Include="Resources\Images\tlp2844.jpg" />
+    <Resource Include="Resources\Images\u17837114.jpg" />
+    <Resource Include="Resources\Images\users.ico" />
+    <Resource Include="Resources\Images\Warning.ico" />
+    <Resource Include="Resources\Images\ZEBRA_TLP2844_DESKTOP_PRINTERS %281%29.jpg" />
+    <Resource Include="Resources\Images\ZEBRA_TLP2844_DESKTOP_PRINTERS.jpg" />
+    <Resource Include="Resources\Images\_xls.png" />
+    <Resource Include="Resources\Theme\SplashScreen1.jpg" />
+    <Resource Include="Resources\Theme\SplashScreen13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
